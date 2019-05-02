@@ -8,7 +8,7 @@ function word_indices = processEmail(email_contents)
 
 % Load Vocabulary
 vocabList = getVocabList();
-
+n = size(vocabList, 1);
 % Init return value
 word_indices = [];
 
@@ -66,8 +66,11 @@ while ~isempty(email_contents)
 
     % Stem the word 
     % (the porterStemmer sometimes has issues, so we use a try catch block)
-    try str = porterStemmer(strtrim(str)); 
-    catch str = ''; continue;
+    try 
+        str = porterStemmer(strtrim(str)); 
+    catch
+        str = ''; 
+        continue;
     end;
 
     % Skip the word if it is too short
@@ -96,19 +99,14 @@ while ~isempty(email_contents)
     % Note: You can use strcmp(str1, str2) to compare two strings (str1 and
     %       str2). It will return 1 only if the two strings are equivalent.
     %
-
-
-
-
-
-
-
-
-
-
+    for i= 1:n
+        if (strcmp(str, vocabList{i}))
+            word_indices = [word_indices; i];
+            break;
+        end
+    end
+    
     % =============================================================
-
-
     % Print to screen, ensuring that the output lines are not too long
     if (l + length(str) + 1) > 78
         fprintf('\n');
