@@ -21,11 +21,22 @@ idx = zeros(size(X,1), 1);
 % Note: You can use a for-loop over the examples to compute this.
 %
 
-
-
-
-
-
+% for i = 1:size(X,1)
+%     tempMin = sum((X(i,:) - centroids(1,:)).^2);
+%     tempIdx = 1;
+%     for j = 2:K
+%         tempValue = sum((X(i,:) - centroids(j,:)).^2);
+%         if (tempValue < tempMin)
+%             tempMin = tempValue;
+%             tempIdx = j;
+%         end
+%     end
+%     idx(i) = tempIdx;
+% end
+for i = 1:size(X,1)
+    [~, I] = min(sum((bsxfun(@minus, X(i,:), centroids).^2),2));
+    idx(i) = I;
+end
 
 % =============================================================
 
