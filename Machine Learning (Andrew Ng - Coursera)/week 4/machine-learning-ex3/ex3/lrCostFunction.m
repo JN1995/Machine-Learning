@@ -35,16 +35,12 @@ grad = zeros(size(theta));
 %           temp(1) = 0;   % because we don't add anything for j = 0  
 %           grad = grad + YOUR_CODE_HERE (using the temp variable)
 %
-
-
-
-
-
-
-
-
-
-
+theta_regularied = theta;
+theta_regularied(1) = 0;
+z = X * theta;
+h = sigmoid(z);
+J = 1.0/m*sum(-y.*log(h)-(1-y).*log(1-h)) + lambda/(2*m)*sum(theta_regularied.^2);
+grad = 1.0/m*X'*(h-y) + lambda/m*theta_regularied;
 % =============================================================
 
 grad = grad(:);
