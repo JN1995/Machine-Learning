@@ -1,0 +1,33 @@
+Hello, and welcome to “Deep Learning with TensorFlow.”
+
+Throughout the five modules of this course, we’re going to show you how you can use
+Google’s open source TensorFlow library for your deep learning applications.
+
+In module 1, after introducing you to the TensorFlow library and walking you through
+a “hello, world” example, we’ll go over a few basic machine learning algorithms.
+This will include linear regression, and logistic regression.
+It will help you to understand the fundamentals of TensorFlow and dataflow graphs.
+
+In module 2, we’ll introduce you to the convolutional neural network, a powerful model
+that’s capable of object recognition. Like the brain, it works by passing the inputs
+through a sequence of increasingly complex layers.
+We’ll explain the convolutional operation in detail and then, we’ll show you how to
+build a convolutional net with TensorFlow, in order to recognize handwritten digits.
+
+In module 3, we’ll provide an overview of sequential data and recurrent neural networks,
+as well as the long short-term memory model. We’ll also go over the application of these
+networks in natural language processing.
+
+In module 4, we’ll introduce you to unsupervised learning.
+Our main focus will be on the Restricted Boltzmann Machine, which detects patterns by reconstructing
+its input. After creating and training a Restricted Boltzmann
+Machine in TensorFlow, we’ll show you how to use it to build a movie recommendation
+system.
+
+And, finally, Module 5 will explain the concept of an Autoencoder, an unsupervised learning
+model for detecting patterns. The module includes a TensorFlow implementation
+of an Autoencoder. There’s a lot to go over, but after completing
+this course, you’ll be well on your way to using TensorFlow in your own applications.
+
+Thanks for watching, and we hope you’ll enjoy “Deep Learning with TensorFlow!"
+
