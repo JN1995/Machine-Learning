@@ -1,3 +1,13 @@
+## Learning objectives 
+
+### In this course we will learn about:
+
+* Using Tensorflow for deeplearning 
+* Breaking down images into their principal components and automatically generating a caption for it
+* Recommending movies, products, anything, based on what a certain person likes
+* Processing incomplete sentences and predicting what was going to be written afterwards
+
+
 ## Syllabus
 
 ### Module 1 - Introduction to TensorFlow
