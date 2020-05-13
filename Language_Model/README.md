@@ -13,7 +13,7 @@
 *next to do*:
 
 * refactor to class structure
-* using bidirectional alter *left and right* training
+
 
 ### Word level 
 
@@ -24,5 +24,4 @@
 *next to do*:
 
 * refactor to class structure
-* using bidirectional alter *left and right* training
 * combine 2 level (character and word) to correct mistake (typos and spell check)
